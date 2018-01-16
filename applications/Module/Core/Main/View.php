@@ -33,9 +33,19 @@ class View
      * View constructor.
      *
      * @param string $directory
-     * @param array $attributes
      */
-    public function __construct(string $directory, array $attributes = [])
+    public function __construct(string $directory)
+    {
+        $this->setPath($directory);
+    }
+
+    /**
+     * Set Path
+     *
+     * @param string $directory
+     * @throws \InvalidArgumentException
+     */
+    public function setPath(string $directory)
     {
         $directory = Path::resolveSeparator($directory);
         if (!is_dir($directory)) {
