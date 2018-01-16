@@ -18,6 +18,8 @@ class Login extends AbstractAuthModule
     /**
      * @throws \Psr\Container\ContainerExceptionInterface
      * @throws \Psr\Container\NotFoundExceptionInterface
+     *
+     * @return mixed|array or not an empty array if success
      */
     public function cookieLoginCheck()
     {
@@ -25,9 +27,7 @@ class Login extends AbstractAuthModule
          * @var Cookies $cookie
          */
         $cookie = Container\Get('cookie');
-        return [
-            'username' => 'admin'
-        ];
+        return [];
     }
 
     /**
