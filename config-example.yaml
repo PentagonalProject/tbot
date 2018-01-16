@@ -1,0 +1,27 @@
+# ---------------------------------------
+# SERVICE CONFIGURATION
+# ---------------------------------------
+# Use content Buffering
+useBuffer: true
+# Serve Empty Response
+serveEmptyResponse: true
+# Display Errors Debug
+displayErrors: true
+# Allow Origin API
+allowAllOrigin: true
+# Use Memory As stream
+useMemory: true
+# JSON API PRETTIFY
+prettify: true
+# Disable escaping JSON API slash
+escapeSlash: false
+
+database :
+  driver: pgsql
+  host: localhost
+  user: database_user
+  password: database_password
+  name: database_name
+
+cache:
+  driver: redis

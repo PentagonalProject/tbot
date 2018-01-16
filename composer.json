@@ -1,0 +1,31 @@
+{
+  "name" : "pentagonal/tbot",
+  "description": "",
+  "require": {
+    "php": ">= 7.0",
+    "ext-curl": "*",
+    "apatis/prima-function": "~1",
+    "irazasyed/telegram-bot-sdk": "^2.0",
+    "pentagonal/database-dbal": "~1",
+    "guzzlehttp/guzzle" : "~6",
+    "phpfastcache/phpfastcache": "~6",
+    "psr/simple-cache": "~1"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.*"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "pentagonal",
+      "email": "org@pentagonal.org",
+      "homepage": "https://github.com/pentagonal",
+      "role": "developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Pentagonal\\TBot\\Base\\" : "applications/Base/"
+    }
+  }
+}
